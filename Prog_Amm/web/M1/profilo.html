@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nerdbook Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Claudio Mocci">
+        <meta name="keywords" content="nerdbook social network profilo info utente">
+    </head>
+    
+    <body>
+        <div id="divHeader">
+            <h1>Nerdbook Profilo</h1>  
+        </div>
+        
+        <div id="divMenuNav">
+            <h2>Sezione di Navigazione</h2>
+                <ul>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>        
+        </div>
+        
+        <div id="divBody">
+            <h2>Inseriasci i tuoi dati</h2>
+            <form>
+                <label for="nome">Nome</label></br>
+                <input type="text" name="nome" id="nome"/>
+                <br/>
+                
+                <label for="cognome">Cognome</label></br>
+                <input type="text" name="cognome" id="cognome"/>
+                </br>
+                </br>
+                <label for="immagine">URL Immagine Profilo </label>
+                <input type="url" name="immagine" id="immagine"/>
+                </br>
+                </br>
+                
+                <label for="biografia">Presentati</label></br>
+                <textarea rows="5" cols="20"
+                          name="biografia" id="biografia"></textarea>
+                </br></br>
+                
+                <label for="nascita">Data di nascita </label>
+                <input type="date" name="nascita" id="nascita"/>
+                </br></br>
+                
+                <label for="psw">Password</label></br>
+                <input type="password" name="psw" id="psw"/>
+                </br>
+                
+                <label for="conferma">Conferma password</label></br>
+                <input type="password" name="conferma" id="conferma"/>
+                </br></br>
+                
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
