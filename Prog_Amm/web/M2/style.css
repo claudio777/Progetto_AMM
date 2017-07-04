@@ -35,3 +35,8 @@ a:link{
 a:visited{
     color:purple;
 }
+
+input:focus { 
+    background-color: azure;
+    border: 1px solid #dcdcdc;
+}
