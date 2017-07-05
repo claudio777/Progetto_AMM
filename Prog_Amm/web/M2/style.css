@@ -7,6 +7,8 @@ and open the template in the editor.
     Created on : Jul 3, 2017, 11:58:46 PM
     Author     : Albe
 */
+
+
 body{
     background: whitesmoke;
     font-family: sans-serif;
@@ -39,4 +41,82 @@ a:visited{
 input:focus { 
     background-color: azure;
     border: 1px solid #dcdcdc;
+}
+
+body {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: #e8eae9;
+    font-size: 62.5%;
+    margin: auto;
+}
+::selection {
+    background: #8ec63f; /* Safari */
+}
+::-moz-selection {
+    background: #8ec63f; /* Firefox */
+}
+
+#logoandnav {
+    background-color: #0b0f0c;
+    height: 112px;
+    margin-top: 0px;
+    line-height: 112px;
+}
+#logoandnav:before {
+    width: 100%;
+    height: inherit;
+    display: block;
+    position: absolute;
+    content:"";
+    left: 0;
+    z-index: -1;
+    background-color: inherit;
+}
+
+/* MAIN LOGO */
+ #mainlogodiv {
+    float: left;
+    line-height: 112px;
+    display: inline-block;
+}
+#mainlogo {
+    vertical-align: middle;
+}
+
+/* NAVIGATION MENU */
+ nav {
+    float: right;
+    display: inline-block;
+    height: 112px;
+    line-height: 112px;
+}
+ul.navlist li {
+    height: 112px;
+    list-style-type: none;
+    display: inline-block;
+}
+ul.navlist {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a.navigation:link, a.navigation:visited {
+    font-family:'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #e2e2e2;
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 112px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a.navigation:hover, a.navigation:active {
+    color: #0b0f0c;
+    background-color: #8ec63f;
 }
