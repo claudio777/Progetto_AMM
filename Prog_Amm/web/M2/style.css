@@ -8,34 +8,51 @@ and open the template in the editor.
     Author     : Albe
 */
 
+html,body{margin:0; padding: 0}
 
 body{
-    background: whitesmoke;
-    font-family: sans-serif;
+    background: white;
+    font-family: arial,sans-serif; 
+    font-size: 76%;
 }
 
-h1{
- color: #dd4b39;
- border-bottom: 1px solid #dd4b39;
- text-align: center;
-}
 
-h2{
+
+h2,h3{
     color:midnightblue;
-    text-indent: 30px;
+    
 }
 
-h3{
-    color:midnightblue;
-    text-indent: 40px;
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
 }
 
-a:link{
-    color:lightskyblue
+li {
+    float: left;
 }
 
-a:visited{
-    color:purple;
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 input:focus { 
@@ -43,80 +60,120 @@ input:focus {
     border: 1px solid #dcdcdc;
 }
 
-body {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    background-color: #e8eae9;
-    font-size: 62.5%;
-    margin: auto;
-}
-::selection {
-    background: #8ec63f; /* Safari */
-}
-::-moz-selection {
-    background: #8ec63f; /* Firefox */
+label, password, textArea {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  padding-bottom: 2%;
+}​
+
+input{
+     width: 300px;
 }
 
-#logoandnav {
-    background-color: #0b0f0c;
-    height: 112px;
-    margin-top: 0px;
-    line-height: 112px;
+div#userForm button{
+    width: 315px;
+    height: 40px;
 }
-#logoandnav:before {
-    width: 100%;
-    height: inherit;
-    display: block;
-    position: absolute;
-    content:"";
+
+
+/*sezione monolitica*/
+@media only screen and (max-width: 480px){
+    div#container{ /*nessuna regola necessaria*/ }
+    h1{margin: 0;padding:0}
+    h2{color:#4078B8; font-size:1.5em; text-align:center}
+    /*div#navigation{background-color:#000; color: #fff}*/
+    div#content{padding:0 1.5em}
+    div#content p{line-height:1.3em}
+    div#footer{padding:0.5em; background-color:#B0D0E8; color:#000; text-align:center}
+}
+/*da usare sotto xxx px*/
+
+/*sezione a doppia colonna*/
+@media only screen and (min-width: 481px){
+    /*blocco fisso nella parte superiore - include logo,link di navigazione e logout*/
+    div#header{
     left: 0;
-    z-index: -1;
-    background-color: inherit;
-}
-
-/* MAIN LOGO */
- #mainlogodiv {
-    float: left;
-    line-height: 112px;
-    display: inline-block;
-}
-#mainlogo {
-    vertical-align: middle;
-}
-
-/* NAVIGATION MENU */
- nav {
-    float: right;
-    display: inline-block;
-    height: 112px;
-    line-height: 112px;
-}
-ul.navlist li {
-    height: 112px;
-    list-style-type: none;
-    display: inline-block;
-}
-ul.navlist {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-a.navigation:link, a.navigation:visited {
-    font-family:'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: #e2e2e2;
-    padding: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    height: 112px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-a.navigation:hover, a.navigation:active {
-    color: #0b0f0c;
-    background-color: #8ec63f;
+    top: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    border-width: 10px 0; 
+        border-style:solid;
+        border-color: black;
+    }
+    
+    div#title{
+        float: left;
+        width: 25%;
+        color: #dd4b39;
+        font-size: 2em;
+    }
+    div#nav{
+        width: 50%;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    div#profilo{
+        float: right;
+        width: 25%;
+        font-size: 1em;
+    }
+    
+    div#login{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 70%;
+        padding: 5%;
+        border-width: 2px 2px; 
+        border-style:solid;
+        border-color: #ccc;
+    }
+    
+    div#login button{
+        width:  200px;
+        height: 30px;
+    }
+    
+    
+    /*contenuti - barra laterale per amici e gruppi + zona dove vengono visulizzati i post*/
+    div#content{
+       padding-top: 6em;
+    }
+   div#friends{
+        padding-top: 10em; 
+        position: fixed;
+        float: left;
+        width: 20em;
+        text-align: center;
+        background-color: lightskyblue;
+        border-width: 0 8px; 
+        border-style:solid;
+        border-color: #ccc;
+        height: 100%;
+    } 
+    
+    div#post
+    {        
+        margin-left: 25em;
+        border-width: 1px 1px;
+        border-style:solid;
+        border-color: #ccc;
+    }
+    div#userPost
+    {
+        padding: 2%;
+    }
+    
+    div#postedPic
+    {
+        padding: 2%;
+    }
+    
+    div#userForm{
+        margin-left: 25em;
+        padding: 10%;
+    }
 }

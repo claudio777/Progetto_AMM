@@ -15,57 +15,67 @@ and open the template in the editor.
     </head>
     
     <body>        
-        <header>
-            <div id="logo">
-                <h1>Nerdbook</h1>  
+        <div id="header">
+            <div id="title">
+                <h1>
+                    NERDBOOK
+                </h1>
             </div>
 
-            <div id="navmenu">
-                <h2>Sezione di Navigazione</h2>
+            <div id="nav">
                     <ul>
-                        <li><a href="descrizione.html">Descrizione</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <a href="profilo.html">PROFILO</a>
+                        <a href="bacheca.html">BACHECA</a>
                     </ul>        
             </div>
-        </header>
-        
-        <div id="divBody">
-            <h2>Inseriasci i tuoi dati</h2>
-            <form>
-                <label for="nome">Nome</label></br>
-                <input type="text" name="nome" id="nome"/>
-                <br/>
-                
-                <label for="cognome">Cognome</label></br>
-                <input type="text" name="cognome" id="cognome"/>
-                </br>
-                </br>
-                <label for="immagine">URL Immagine Profilo </label>
-                <input type="url" name="immagine" id="immagine"/>
-                </br>
-                </br>
-                
-                <label for="biografia">Presentati</label></br>
-                <textarea rows="5" cols="20"
-                          name="biografia" id="biografia"></textarea>
-                </br></br>
-                
-                <label for="nascita">Data di nascita </label>
-                <input type="date" name="nascita" id="nascita"/>
-                </br></br>
-                
-                <label for="psw">Password</label></br>
-                <input type="password" name="psw" id="psw"/>
-                </br>
-                
-                <label for="conferma">Conferma password</label></br>
-                <input type="password" name="conferma" id="conferma"/>
-                </br></br>
-                
-                <button type="submit">Invia</button>
-            </form>
+            
+            <div id="profilo">
+                <p>
+                    <b>Giorgio Mastrota<b></p>
+                    <br/><br/>
+                    <a>logout</a>
+            </div>
         </div>
         
-        
+        <div id="content">
+            
+            <div id="friends">
+                 <h2>Friends</h2>   <br/></br>
+                    <a>Gioacchino</a></br>
+                    <a>Brandemberg</a></br>
+                    <br/>
+                 <h2>Groups</h2>    <br/></br>
+                    <a>Club degli Scaldadivano</a></br>
+                    <a>GA-Rage</a>
+            </div>
+            
+            <div id="userForm">
+            <h2>Inserisci i tuoi dati</h2>
+            <form>
+                <label for="nome">Nome</label>  
+                <input type="text" name="nome" id="nome"/><br/>
+                               
+                <label for="cognome">Cognome</label>   
+                <input type="text" name="cognome" id="cognome"/><br/>
+                               
+                <label for="immagine">URL Immagine Profilo </label>
+                <input type="url" name="immagine" id="immagine"/><br/>
+                               
+                <label for="presentazione">Presentati</label> 
+                <input type="text" name="presentazione" id="presentazione"><br/>
+                               
+                <label for="nascita">Data di nascita </label>
+                <input type="text" name="nascita" id="nascita"><br/>
+                               
+                <label for="psw">Password</label>
+                <input type="password" name="psw" id="psw"/><br/>
+                               
+                <label for="conferma">Conferma password</label>
+                <input type="password" name="conferma" id="conferma"/><br/>
+                
+                <button type="submit"><b>Aggiorna</b></button>
+            </form>
+            </div>
+        </div>
     </body>
 </html>
