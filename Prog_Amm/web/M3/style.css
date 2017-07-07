@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 3, 2017, 11:58:46 PM
+    Author     : Albe
+*/
+
+html,body{margin:0; padding: 0}
+
+body{
+    background: white;
+    font-family: arial,sans-serif; 
+    font-size: 76%;
+}
+
+
+
+h2,h3{
+    color:midnightblue;
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input:focus { 
+    background-color: azure;
+    border: 1px solid #dcdcdc;
+}
+
+label, password, textArea {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  padding-bottom: 2%;
+}​
+
+input{
+     width: 300px;
+}
+
+div#userForm button{
+    width: 315px;
+    height: 40px;
+}
+
+
+/*sezione monolitica*/
+@media only screen and (max-width: 480px){
+    div#container{ /*nessuna regola necessaria*/ }
+    h1{margin: 0;padding:0}
+    h2{color:#4078B8; font-size:1.5em; text-align:center}
+    /*div#navigation{background-color:#000; color: #fff}*/
+    div#content{padding:0 1.5em}
+    div#content p{line-height:1.3em}
+    div#footer{padding:0.5em; background-color:#B0D0E8; color:#000; text-align:center}
+}
+/*da usare sotto xxx px*/
+
+/*sezione a doppia colonna*/
+@media only screen and (min-width: 481px){
+    /*blocco fisso nella parte superiore - include logo,link di navigazione e logout*/
+    div#header{
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    border-width: 10px 0; 
+        border-style:solid;
+        border-color: black;
+    }
+    
+    div#title{
+        float: left;
+        width: 25%;
+        color: #dd4b39;
+        font-size: 2em;
+    }
+    div#nav{
+        width: 50%;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    div#profilo{
+        float: right;
+        width: 25%;
+        font-size: 1em;
+    }
+    
+    div#login{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 70%;
+        padding: 5%;
+        border-width: 2px 2px; 
+        border-style:solid;
+        border-color: #ccc;
+    }
+    
+    div#login button{
+        width:  200px;
+        height: 30px;
+    }
+    
+    
+    /*contenuti - barra laterale per amici e gruppi + zona dove vengono visulizzati i post*/
+    div#content{
+       padding-top: 6em;
+    }
+   div#friends{
+        padding-top: 10em; 
+        position: fixed;
+        float: left;
+        width: 20em;
+        text-align: center;
+        background-color: lightskyblue;
+        border-width: 0 8px; 
+        border-style:solid;
+        border-color: #ccc;
+        height: 100%;
+    } 
+    
+    div#post
+    {        
+        margin-left: 25em;
+        border-width: 1px 1px;
+        border-style:solid;
+        border-color: #ccc;
+    }
+    div#userPost
+    {
+        padding: 2%;
+    }
+    
+    div#postedPic
+    {
+        padding: 2%;
+    }
+    
+    div#userForm{
+        margin-left: 25em;
+        padding: 10%;
+    }
+}

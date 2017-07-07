@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nerdbook Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Claudio Mocci">
+        <meta name="keywords" content="nerdbook social network profilo info utente">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>        
+        <div id="header">
+            <div id="title">
+                <h1>
+                    NERDBOOK
+                </h1>
+            </div>
+
+            <div id="nav">
+                    <ul>
+                        <a href="profilo.html">PROFILO</a>
+                        <a href="bacheca.html">BACHECA</a>
+                    </ul>        
+            </div>
+            
+            <div id="profilo">
+                <p>
+                    <b>Giorgio Mastrota<b></p>
+                    <br/><br/>
+                    <a>logout</a>
+            </div>
+        </div>
+        
+        <div id="content">
+            
+            <div id="friends">
+                 <h2>Friends</h2>   <br/></br>
+                    <a>Gioacchino</a></br>
+                    <a>Brandemberg</a></br>
+                    <br/>
+                 <h2>Groups</h2>    <br/></br>
+                    <a>Club degli Scaldadivano</a></br>
+                    <a>GA-Rage</a>
+            </div>
+            
+            <div id="userForm">
+            <h2>Inserisci i tuoi dati</h2>
+            <form>
+                <label for="nome">Nome</label>  
+                <input type="text" name="nome" id="nome"/><br/>
+                               
+                <label for="cognome">Cognome</label>   
+                <input type="text" name="cognome" id="cognome"/><br/>
+                               
+                <label for="immagine">URL Immagine Profilo </label>
+                <input type="url" name="immagine" id="immagine"/><br/>
+                               
+                <label for="presentazione">Presentati</label> 
+                <input type="text" name="presentazione" id="presentazione"><br/>
+                               
+                <label for="nascita">Data di nascita </label>
+                <input type="text" name="nascita" id="nascita"><br/>
+                               
+                <label for="psw">Password</label>
+                <input type="password" name="psw" id="psw"/><br/>
+                               
+                <label for="conferma">Conferma password</label>
+                <input type="password" name="conferma" id="conferma"/><br/>
+                
+                <button type="submit"><b>Aggiorna</b></button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
